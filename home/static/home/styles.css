@@ -1,0 +1,73 @@
+/* Apply blue ocean background image */
+body {
+    background-image: url("{{ MEDIA_URL }}products/abcd.jpeg"); /* Use Django's media URL to reference the image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent header */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;  /* Fancy font */
+    font-size: 3em;
+    color: #fff;
+    margin: 0;
+}
+
+.admin-login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.admin-login a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.product {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent product box */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 300px; /* Prevent portrait images from overflowing */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-me a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
